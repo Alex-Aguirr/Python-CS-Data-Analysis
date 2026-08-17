@@ -13,3 +13,6 @@
 - `git branch` — list branches
 - `git branch <name>` — create a branch
 - `git switch <name>` — switch branches
+
+### Commiting
+- Commit log: git log --oneline --decorate --graph --all
