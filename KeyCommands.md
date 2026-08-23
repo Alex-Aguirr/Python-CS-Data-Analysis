@@ -20,3 +20,10 @@
 
 ### Mergings
 - `git merge <branch>` — merge another branch into the current branch
+
+### Adding a remote repository
+- `git remote add <name> <url>` — add a remote repository
+- `git remote -v` — list remote repositories
+
+### Pushing to a remote repository
+- `git push -u <remote> <branch>` — push changes to a remote repository
