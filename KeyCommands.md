@@ -14,6 +14,9 @@
 - `git branch <name>` — create a branch
 - `git switch -c <branch_name>` — create and switch to a new branch
 - `git switch <name>` — switch branches
+- `git branch -r` — list remote branches
+- `git branch -a` — list all branches (local and remote)
+
 
 ### Commiting
 - Commit log: git log --oneline --decorate --graph --all
@@ -26,4 +29,6 @@
 - `git remote -v` — list remote repositories
 
 ### Pushing to a remote repository
+-u is short for: --set-upstream
 - `git push -u <remote> <branch>` — push changes to a remote repository
+
