@@ -32,3 +32,5 @@
 -u is short for: --set-upstream
 - `git push -u <remote> <branch>` — push changes to a remote repository
 
+### Pulling from a remote repository
+- `git fetch` — download information and commits from the remote without integrating them into the current local branch
