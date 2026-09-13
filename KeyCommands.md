@@ -23,8 +23,9 @@
 - Commit log: git log --oneline --decorate --graph --all
 
 ### Restoring and unstaging
-- `git restore <file>` — discard unstaged changes to a file
-- `git restore --staged <file>` — remove a file from the staging area without discarding its changes
+- `git restore <file>` — discard unstaged changes to a file, stage area -> working tree: 
+   Make my working-tree file look like the staged version
+- `git restore --staged <file>` — remove a file from the staging area without discarding its changes. Head-> staging area: Make my staged file look like the HEAD version. It cghanges the staging area, but preserves your working-tree work.
 
 ### Moving and renaming
 - `git mv <old_name> <new_name>` — move or rename a tracked file
@@ -52,15 +53,29 @@
 -u is short for: --set-upstream
 - `git push -u <remote> <branch>` — push a branch and establish its upstream tracking relationship
 - `git push` — push the current branch using its configured upstream
+- `git push origin main` — push the local `main` branch to the remote named `origin`
+- `git push origin --delete <branch>` — delete a remote branch
 
 ### Pulling from a remote repository
 - `git fetch` — download information and commits from the remote without integrating them into the current local branch
 - `git pull` — fetch remote changes and integrate them into the current branch
 - `git diff main..origin/main` — compare local `main` with the fetched state of remote `main`
 
+# What a GitHub Pull Request Does
+
+A **GitHub pull request (PR)** is a way to propose changes you've made on a branch and request that someone review and merge those changes into another branch (usually the main branch).
+
+In short, a PR:
+
+1. **Proposes changes** — You push commits from a feature branch and open a PR to show what you changed, line by line.
+2. **Invites review** — Teammates can comment on the code, suggest edits, and approve (or request changes) before anything merges.
+3. **Runs checks** — CI tests, linting, and other automated checks can run automatically on the PR before it's allowed to merge.
+4. **Merges the work** — Once approved and checks pass, the PR merges your branch's commits into the target branch, integrating the changes into the project.
+
+Think of it as a controlled, reviewable handoff: *"I've finished this work on a separate branch — please review it and pull it into the main project."*
+
 
 ### Upcoming
 - rebase, reset, revert, cherry-pick, stash and more advanced commands
 
 
-Adding lines just for learning purposes.
