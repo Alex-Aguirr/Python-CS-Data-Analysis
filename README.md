@@ -43,6 +43,3 @@ Every new tool or command should answer:
 3. How do I know it worked?
 4. Where does it live?
 
-Temporary line
-
-Phase 2 Git Practice
